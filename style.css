@@ -1,0 +1,166 @@
+body {
+    margin: 7px 10%;
+    font-family: 'Ubuntu';
+    height: 5000px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    display: grid;
+    gap: 15px;
+}
+
+
+/* First */
+.header__firtst-line {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__firtst-line>:first-child {
+    background: #DEE8FF;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.header__firtst-line>:last-child {
+    color: #4E6BAD;
+
+}
+
+/* Second */
+.second-line {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.second-line__fixed {
+    position: fixed;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    right: 0;
+    top: 0;
+    animation: apperance 1s;
+    box-shadow: 0px 1px 10px #8292b6;
+}
+
+@keyframes apperance {
+    0% {
+        top: -21px
+    }
+
+    100% {
+        top: 0
+    }
+}
+
+.second-line__middle-block {
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+    align-items: center;
+}
+
+.second-line__logo {
+    float: left;
+}
+
+.second-line__logo svg {
+    height: 62px;
+}
+
+.second-line__social-media {
+    min-width: max-content;
+}
+
+.second-line__social-media img {
+    width: 35px;
+    height: 35px;
+}
+
+.search-panel {
+
+    display: flex;
+    width: 100%;
+    max-width: 560px;
+}
+
+.search-panel input {
+    padding: 12px;
+    width: 100%;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #4E6BAD;
+}
+
+.search-panel input:focus {
+    outline: none;
+    border: 2px solid #4E6BAD;
+}
+
+
+.search-panel__button {
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 3px 3px 0;
+    background-color: #4E6BAD;
+}
+
+.search-panel__button p {
+    color: white;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.second-line__contacts {
+    display: grid;
+    min-width: max-content;
+    align-content: space-between;
+    height: 100%;
+}
+
+.second-line__contacts p {
+    color: #4E6BAD;
+    text-align: end;
+}
+
+.second-line__contacts h2 {
+    margin: 0;
+}
+
+/* Tree|Navigation */
+.navigation {
+    display: flex;
+    border-top: 1px solid #0752FF;
+    padding: 10px 0;
+    justify-content: space-around;
+}
+
+.navigation__link {
+    color: #4E6BAD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        margin: 0 50px;
+    }
+}
